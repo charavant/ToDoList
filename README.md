@@ -17,7 +17,8 @@ Supports full-screen mode (status bar hidden) for a distraction-free experience.
 
 ## 📸 Screenshots
 
-*(You can add screenshots here — for example, from Expo Go on your phone.)*
+![alt text](https://github.com/charavant/ToDoList/tree/master/images/1.jpg "Image 1")
+![alt text](https://github.com/charavant/ToDoList/tree/master/images/2.jpg "Image 2")
 
 ---
 
