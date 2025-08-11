@@ -33,8 +33,8 @@ Supports full-screen mode (status bar hidden) for a distraction-free experience.
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/charavant/ToDoList.git
+cd ToDoList
 ```
 
 ---

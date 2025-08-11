@@ -23,13 +23,11 @@ export default function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
   const didLoad = useRef(false);
 
-  // Hide the status bar on mount (shows again when you swipe from the top)
   useEffect(() => {
     setStatusBarHidden(true, "slide");
     return () => setStatusBarHidden(false, "none");
   }, []);
 
-  // Load saved todos on first mount
   useEffect(() => {
     (async () => {
       try {
@@ -43,7 +41,6 @@ export default function App() {
     })();
   }, []);
 
-  // Persist when todos change (after initial load)
   useEffect(() => {
     if (!didLoad.current) return;
     AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(todos)).catch((e) =>
@@ -87,7 +84,6 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Keep this to ensure the bar stays hidden and animates properly */}
       <StatusBar hidden animated />
 
       <KeyboardAvoidingView
